@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2px;
+    min-width: 320px;
+
+    /* Reset style */
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    /* Reset style */
+    margin: 0;
+}
+
+button {
+    /* Reset style */
+    outline: none;
+    border: none;
+    padding: 0;
+    background: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    text-align: inherit;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    color: inherit;
+
+    /* Reset style */
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
