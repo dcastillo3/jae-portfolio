@@ -8,26 +8,30 @@ import { NotFound } from '../components/main/notFound';
 const menuRoutes = [
     {
         id: 1,
-        name: 'Portfolio',
+        name: 'Works',
         path: '/',
+        icon: 'slideshow',
         Element: Portfolio
     },
     {
         id: 2,
-        name: 'PitchDeck',
+        name: 'Pitch',
         path: '/pitch-deck',
+        icon: 'queue_play_next',
         Element: PitchDeck
     },
     {
         id: 3,
         name: 'Donate',
         path: '/donate',
+        icon: 'assist_walker',
         Element: Donate
     },
     {
         id: 4,
-        name: 'Biography',
+        name: 'About',
         path: '/biography',
+        icon: 'person',
         Element: Biography
     },
 ];

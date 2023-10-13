@@ -1,11 +1,11 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-function MenuItem({name, path, callback}) {
+function MenuItem({name, path, icon, callback}) {
     const navigate = useNavigate();
     const { pathname } = useLocation();
     const isActive = pathname === path;
-    const menuItemClassName = isActive ? 'menu-item-active' : 'menu-item';
+    const menuItemContainerClassName = isActive ? 'menu-item-container-active' : 'menu-item-container';
 
     const handleMenuItemClick = path => {
         navigate(path);
@@ -14,8 +14,12 @@ function MenuItem({name, path, callback}) {
     };
 
     return (
-        <button className="menu-item-container" onClick={() => handleMenuItemClick(path)}>
-            <div className={menuItemClassName}>
+        <button className={menuItemContainerClassName} onClick={() => handleMenuItemClick(path)}>
+            <span className="material-icons menu-item-icon">
+                {icon}
+            </span>
+
+            <div className="menu-item-text">
                 {name}
             </div>
         </button>

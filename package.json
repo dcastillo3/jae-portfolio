@@ -24,6 +24,10 @@
   "homepage": "https://github.com/dcastillo3/jae-portfolio#readme",
   "proxy": "http://localhost:8000",
   "dependencies": {
+    "@fontsource/abel": "^5.0.8",
+    "@fontsource/cormorant-garamond": "^5.0.8",
+    "@fontsource/crimson-text": "^5.0.8",
+    "@fontsource/playfair-display-sc": "^5.0.8",
     "axios": "^1.5.1",
     "body-parser": "^1.20.2",
     "concurrently": "^8.2.1",
@@ -31,6 +35,7 @@
     "express": "^4.18.2",
     "html-webpack-plugin": "^5.5.3",
     "lodash": "^4.17.21",
+    "material-icons": "^1.13.12",
     "morgan": "^1.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
