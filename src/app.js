@@ -3,6 +3,11 @@ import { MainRoutes } from './routes';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { VideoContext } from './context';
+import "@fontsource/crimson-text";
+import "@fontsource/abel";
+import "@fontsource/playfair-display-sc";
+import "@fontsource/cormorant-garamond";
+import 'material-icons/iconfont/material-icons.css';
 import './theme/theme.css';
 
 function App() {
@@ -13,9 +18,14 @@ function App() {
     }, []);
 
     return (
-        <div>
-            <Header />
-            <MainRoutes />
+        <div className="app">
+            <div className="inner-wrapper">
+                <Header />
+                
+                <div className="main-wrapper">
+                    <MainRoutes />
+                </div>
+            </div>
             <Footer />
         </div>
     );
