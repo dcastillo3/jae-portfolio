@@ -7,6 +7,7 @@ import "@fontsource/crimson-text";
 import "@fontsource/abel";
 import "@fontsource/playfair-display-sc";
 import "@fontsource/cormorant-garamond";
+import "@fontsource/abel";
 import 'material-icons/iconfont/material-icons.css';
 import './theme/theme.css';
 

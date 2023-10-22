@@ -3,7 +3,7 @@ import React from 'react';
 function PitchDeck() {
     return (
         <div className="pitch-deck">
-            PitchDeck
+            <p>PitchDeck</p>
         </div>
     );
 };

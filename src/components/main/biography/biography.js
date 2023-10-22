@@ -3,22 +3,13 @@ import React from 'react';
 function Biography() {
     return (
         <div className="biography">
-            Bloodtype 🅾️ with over 9000 midi-chlorian.
-            <p>
-                I am almost Pentalingual with Peter Pan Syndrome.
-            </p>
+            <p>I possess a blood type of 🅾️, boasting an extraordinary count of over 9000 midi-chlorian. Additionally, I'm on the cusp of achieving Pentalingual status, albeit carrying a hint of Peter Pan Syndrome in my demeanor.</p>
 
-            <p>
-                I am a traveling chef. Searching all of East Blue for the finest fin.
-            </p>
+            <p>My vocation, you ask? I am a roving culinary artist, exploring the vast expanse of East Blue in pursuit of the most exquisite finned delicacies.</p>
 
-            <p>
-                I like to kick doors in. I am professional.
-            </p>
+            <p>Not to brag, but I have an unorthodox hobby: kicking doors wide open. You could say I'm quite the professional in that regard.</p>
 
-            <p>
-                Particle Alchemist. I like to make things go boom.
-            </p>
+            <p>Oh, and lest I forget, I'm a Particle Alchemist, the kind who revels in making things go 'boom.' So, if you ever need a dish that leaves a lingering flavor explosion or a door that opens with a dramatic flair, I'm your person.</p>
         </div>
     );
 };
