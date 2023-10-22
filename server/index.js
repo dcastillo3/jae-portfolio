@@ -3,9 +3,6 @@ require('dotenv').config();
 
 const express = require('express');
 const morgan = require('morgan');
-const ServerlessHttp = require('serverless-http');
-
-let netlifyHandler;
 
 const bootApp = async () => {
     const server = express();
@@ -15,15 +12,15 @@ const bootApp = async () => {
     server.use(morgan('dev'));
     
     server.use('/api', require('./api'));
-
-    //Create and handler for express to work on Netlify production builds
-    netlifyHandler = ServerlessHttp(server);
     
     server.listen(port, function () {
         console.log(`Server is running on port: ${port}`);
     });
+
+    return server;
 };
 
-bootApp();
+const expressServer = bootApp();
 
-module.exports = netlifyHandler;
+// Export server instance for Netlify
+module.exports = expressServer;
