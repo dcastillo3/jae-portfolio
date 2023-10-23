@@ -15,13 +15,15 @@ const bootApp = async () => {
 
     // Start server in development mode
     if(process.env.NODE_ENV === 'development') {
-        server.listen(port, function () {
-            console.log(`Server is running on port: ${port}`);
+        server.listen(port, () => {
+            console.log(`Server is running in development on port: ${port}`);
         });
-    };
+    } else {
+        // Export server instance for Netlify serverless function
+        console.log('Server is being exported for Netlify serverless function');
 
-    // Export server instance for Netlify serverless function
-    module.exports = server;
+        module.exports = server;
+    };
 };
 
 bootApp();

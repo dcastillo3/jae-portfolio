@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "start-react": "webpack-dev-server --mode=development",
+    "start-react": "webpack-dev-server --config webpack.dev.js --mode=development",
     "start-server": "nodemon server/index.js",
     "dev": "concurrently \"npm run start-server\" \"npm run start-react\" ",
-    "debug": "concurrently \"npm run start-server\" \"webpack-dev-server --mode=development --devtool source-map\"",
-    "build": "webpack --mode=production",
+    "debug": "concurrently \"npm run start-server\" \"webpack-dev-server --config webpack.dev.js --mode=development --devtool source-map\"",
+    "build": "webpack --config webpack.prod.js --mode=production",
     "test": "npm test"
   },
   "repository": {
@@ -55,6 +55,7 @@
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
   }
 }
