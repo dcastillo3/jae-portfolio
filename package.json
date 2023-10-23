@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "start-react": "webpack-dev-server --config webpack.dev.js --mode=development",
+    "start-react": "webpack-dev-server --config webpack.dev.js",
     "start-server": "nodemon server/index.js",
     "dev": "concurrently \"npm run start-server\" \"npm run start-react\" ",
-    "debug": "concurrently \"npm run start-server\" \"webpack-dev-server --config webpack.dev.js --mode=development --devtool source-map\"",
-    "build": "webpack --config webpack.prod.js --mode=production",
+    "debug": "concurrently \"npm run start-server\" \"webpack-dev-server --config webpack.dev.js --devtool source-map\"",
+    "build": "webpack --config webpack.prod.js",
     "test": "npm test"
   },
   "repository": {
