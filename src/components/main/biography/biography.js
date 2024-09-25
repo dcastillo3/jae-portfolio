@@ -3,13 +3,11 @@ import React from 'react';
 function Biography() {
     return (
         <div className="biography">
-            <p>I possess a blood type of 🅾️, boasting an extraordinary count of over 9000 midi-chlorian. Additionally, I'm on the cusp of achieving Pentalingual status, albeit carrying a hint of Peter Pan Syndrome in my demeanor.</p>
+            <h2 className="biography-title">Who We Are</h2>
+            <p>We are a group of young aspiring filmmakers and visual artists who each represent a cultural heritage and unique aesthetic based on our artistic preferences and personal background. We love to share our ideas as well as our favorite films.</p>
 
-            <p>My vocation, you ask? I am a roving culinary artist, exploring the vast expanse of East Blue in pursuit of the most exquisite finned delicacies.</p>
-
-            <p>Not to brag, but I have an unorthodox hobby: kicking doors wide open. You could say I'm quite the professional in that regard.</p>
-
-            <p>Oh, and lest I forget, I'm a Particle Alchemist, the kind who revels in making things go 'boom.' So, if you ever need a dish that leaves a lingering flavor explosion or a door that opens with a dramatic flair, I'm your person.</p>
+            <h2 className="biography-title">Statement</h2>
+            <p>In the basis of visual story telling, we put cinematic fundamentals as the forefront of our statement. We are filmmakers and embody the traditions of those who came before us such as our teachers, respected directors and story-tellers. We want to share those unspoken stories of intercultural influences.</p>
         </div>
     );
 };
