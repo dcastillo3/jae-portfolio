@@ -15,10 +15,6 @@ function MenuItem({name, path, icon, callback}) {
 
     return (
         <button className={menuItemContainerClassName} onClick={() => handleMenuItemClick(path)}>
-            <span className="material-icons menu-item-icon">
-                {icon}
-            </span>
-
             <div className="menu-item-text">
                 {name}
             </div>

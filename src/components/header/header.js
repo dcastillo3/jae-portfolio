@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { getRouteByPathname } from '../../routes/routesUtils';
+import { Menu } from '../menu';
 
 function Header() {
     const { pathname } = useLocation();
@@ -8,10 +9,13 @@ function Header() {
 
     return (
         <div className="header">
-            <h1 className="header-name">Jae Malabunga</h1>
-            <h4 className="header-role">Film Studio</h4>
-            <h5 className="middle-line-text">{pageTitle}</h5>
-            <div className="middle-line"></div>
+            <div className="header-row">
+                <div className="header-name">Vision Piece Cinema</div>
+                
+                <Menu />
+            </div>
+
+            <h1 className="page-title">{pageTitle}</h1>
         </div>
     );
 };
