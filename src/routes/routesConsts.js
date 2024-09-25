@@ -1,5 +1,5 @@
-import { Portfolio } from '../components/main/portfolio';
-import { PitchDeck } from '../components/main/pitchDeck';
+import { Projects } from '../components/main/projects';
+import { Events } from '../components/main/events';
 import { Donate } from '../components/main/donate';
 import { Biography } from '../components/main/biography';
 import { NotFound } from '../components/main/notFound';
@@ -8,17 +8,17 @@ import { NotFound } from '../components/main/notFound';
 const menuRoutes = [
     {
         id: 1,
-        name: 'Works',
+        name: 'Projects',
         path: '/',
         icon: 'slideshow',
-        Element: Portfolio
+        Element: Projects
     },
     {
         id: 2,
-        name: 'Pitch',
-        path: '/pitch-deck',
+        name: 'Events',
+        path: '/events',
         icon: 'queue_play_next',
-        Element: PitchDeck
+        Element: Events
     },
     {
         id: 3,

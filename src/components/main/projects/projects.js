@@ -4,7 +4,7 @@ import { VimeoPlayer } from '../../vimeoPlayer';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 
-function Portfolio() {
+function Projects() {
     const [modalOpen, setModalOpen] = useState(false);
     const [activeVideo, setActiveVideo] = useState(null);
     const { videos } = useContext(VideoContext);
@@ -26,7 +26,7 @@ function Portfolio() {
     ));
 
     return (
-        <div className="portfolio">
+        <div className="projects">
             <Modal
 				open={modalOpen}
                 onClose={toggleModal}
@@ -46,4 +46,4 @@ function Portfolio() {
     );
 };
 
-export default Portfolio;
+export default Projects;
