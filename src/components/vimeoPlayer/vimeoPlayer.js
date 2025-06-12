@@ -11,8 +11,7 @@ function VimeoPlayer({ videoId }) {
     useEffect(() => {
         if(videoId) {
             const options = {
-                id: videoId,
-                width: vimeoPlayerWidth
+                id: videoId
             };
     
             playerRef.current = new Vimeo(playerId, options);

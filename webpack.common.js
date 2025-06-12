@@ -28,6 +28,24 @@ module.exports = {
                     },
                     {
                         loader: 'css-loader',
+                        options: {
+                            importLoaders: 1, // This ensures that @import statements are also processed
+                            modules: false, // Set to false if you’re not using CSS modules
+                            url: true, // Enable resolving of `url()` paths
+                        },
+                    },
+                ],
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[hash].[ext]', // Add a hash to avoid cache issues
+                            outputPath: 'images', // Images will be stored in 'build/images'
+                            publicPath: '/images', // Public path used by the browser to access the images
+                        },
                     },
                 ],
             },
