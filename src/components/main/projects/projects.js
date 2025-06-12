@@ -3,6 +3,8 @@ import { VideoContext } from '../../../context';
 import { VimeoPlayer } from '../../vimeoPlayer';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
+import { TeamMemberBlock } from '../../teamMemberBlock';
+import jaeHeadshot from '../../../assets/images/profile.jpg';
 
 function Projects() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -28,16 +30,20 @@ function Projects() {
     return (
         <div className="projects">
             <Modal
-				open={modalOpen}
+                open={modalOpen}
                 onClose={toggleModal}
                 center 
                 classNames={{
                     overlay: 'video-modal-overlay',
                     modal: 'video-modal'
                 }}
-			>
+            >
                 <VimeoPlayer videoId={activeVideo} />
             </Modal>
+
+            {/* <div className="team-member-grid-container">
+                <TeamMemberBlock photo={jaeHeadshot} />
+            </div> */}
 
             <div className="videos-poster-container grid-container">
                 {renderVideoPosters}
